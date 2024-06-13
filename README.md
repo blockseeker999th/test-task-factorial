@@ -16,6 +16,8 @@ sometimes the application can't wait to load DB-container, in that case do Ctrl+
 
 Also you don't need to set up all migrations manually, it'll automatically set up when the docker-compose started
 
+The app calculates the 2 numbers simultaneously with the goroutines help.
+
 
 
 
