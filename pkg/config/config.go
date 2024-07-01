@@ -21,7 +21,7 @@ type Config struct {
 	*HTTPServer
 }
 
-func MustLoad() *Config {
+func LoadConfig() *Config {
 	return &Config{
 		Env:      getEnv("ENV", "local"),
 		Host:     "db",
