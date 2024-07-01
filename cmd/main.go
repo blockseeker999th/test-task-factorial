@@ -26,7 +26,7 @@ func main() {
 		fmt.Println("Error loading .env variables", err)
 	}
 
-	cfg := config.MustLoad()
+	cfg := config.LoadConfig()
 
 	log := setupLogger(os.Getenv("ENV"))
 	log.Info("starting factorial app", slog.String("env", os.Getenv("ENV")))
